@@ -1922,7 +1922,7 @@
 	m.sync = function (args) {
 		var deferred = m.deferred()
 		var outstanding = args.length
-		var results = new Array(outstanding)
+		var results = [];
 		var method = "resolve"
 
 		function synchronizer(pos, resolved) {
